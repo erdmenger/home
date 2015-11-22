@@ -6,14 +6,9 @@
 # export TERM=cygwin
 #LD_LIBRARY_PATH shows where the .dll's are located
 
-# if [ -s "$MAIL" ]           # This is at Shell startup.  In normal
-# then echo "$MAILMSG"        # operation, the Shell checks
-# fi                          # periodically.
-
 #ENV=$HOME/.kshrc            # for subsequent ksh invocations
 #export ENV
 
-#export CLASSPATH=$CLASSPATH:/home/altrichr:.:/db2/sqllib/java/db2java.zip:/COM/swing-0.7/windows.jar:/COM/swing-0.7/motif.jar:/COM/swing-0.7/jlf.jar:/COM/swing-0.7/swing.jar
 #export LD_LIBRARY_PATH=/usr/lpp/db2_05_00/lib
 #. /db2/sqllib/db2profile
 # export PATH=~/lib/script:$PATH
@@ -61,11 +56,6 @@
 # alias 'fgrep=fgrep -n'
 # alias 'vi=vim'
 # 
-# 
-# # CVSROOT
-# CVSROOT=:pserver:erde@cvsserv1.boeblingen.de.ibm.com:/home/cvs/d3848/tdp_r3
-# export CVSROOT
-#  
 
 export HOST=$(hostname)
 PWD=$(pwd)
