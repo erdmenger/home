@@ -1,5 +1,5 @@
 # home
-This is the collection of my essential config files I'm using on all my Linux, Unix or Windows systems over the years.
+This is the collection of my essential config files I have been using on all my Linux, Unix or Windows systems over the years.
 
 ## .bashrc
 Configures my bash.
