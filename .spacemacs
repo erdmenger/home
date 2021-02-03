@@ -102,7 +102,11 @@ values."
    ;; with `:variables' keyword (similar to layers). Check the editing styles
    ;; section of the documentation for details on available variables.
    ;; (default 'vim)
-   dotspacemacs-editing-style 'emacs
+   ;;dotspacemacs-editing-style 'emacs
+   dotspacemacs-editing-style '(hybrid :variables
+                                       hybrid-mode-enable-evilified-state t
+                                       hybrid-mode-enable-hjkl-bindings nil
+                                       hybrid-mode-default-state 'normal)
    ;; If non nil output loading progress in `*Messages*' buffer. (default nil)
    dotspacemacs-verbose-loading nil
    ;; Specify the startup banner. Default value is `official', it displays
@@ -292,6 +296,14 @@ values."
    ;; delete only whitespace for changed lines or `nil' to disable cleanup.
    ;; (default nil)
    dotspacemacs-whitespace-cleanup nil
+   ;; Make sure OPTION key is working correct on Mac with Germany keyboard
+   ;; see also this Git issue:  https://github.com/syl20bnr/spacemacs/issues/5188
+   mac-right-option-modifier nil
+   ;; Warning (evil-collection): `evil-want-keybinding' was set to nil
+   ;; but not before loading evil.
+   ;; Make sure to set `evil-want-keybinding' to nil before loading evil or evil-collection.
+   ;; See https://github.com/emacs-evil/evil-collection/issues/60 for more details.
+   evil-want-keybinding nil
    ))
 
 (defun dotspacemacs/user-init ()
@@ -312,7 +324,7 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   )
 
-(setq-default mac-right-option-modifier nil)
+;; (setq-default mac-right-option-modifier nil)
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
